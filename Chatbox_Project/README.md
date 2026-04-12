@@ -1,101 +1,103 @@
-# 🎮 Hangman Game (Python)
+# 🤖 Basic Chat Box (Python)
 
-## 📌 Overview
-This is a simple command-line Hangman game written in Python.  
-The program randomly selects a word, and the player has to guess it letter by letter within a limited number of attempts.
-
----
-
-## ⚙️ How It Works
-1. A random word is selected from a predefined list.
-2. The word is hidden using underscores (_ _ _).
-3. The player guesses one letter at a time.
-4. If the guess is correct:
-   - The letter is revealed in its correct position(s).
-5. If the guess is incorrect:
-   - Attempts are reduced.
-6. The game continues until:
-   - The player guesses the word (WIN), or
-   - The player runs out of attempts (LOSS).
-7. After the game ends, the player can choose to play again.
+A simple Python-based chatbot that responds to basic greetings, questions, and requests for jokes.
+This project is designed for beginners to understand how conditional logic and dictionaries work in Python.
 
 ---
 
-## 🧠 Game Logic & Formula
-- Word length = number of underscores shown
-- Attempts = 6 (fixed)
-- Correct Guess:
-  - Replace "_" with the guessed letter at correct positions
-- Wrong Guess:
-  - attempts = attempts - 1
+## 📌 Features
 
-Winning Condition:
-- No "_" left in guessed_word
+* Responds to common greetings (hi, hello, etc.)
+* Answers simple questions like "what's your name"
+* Tells random programming jokes
+* Interactive menu system
+* Beginner-friendly logic using dictionaries
 
-Losing Condition:
-- attempts == 0
+---
+
+## 🛠️ How It Works
+
+* The chatbot stores predefined responses in a Python dictionary
+* User inputs are matched against dictionary keys
+* If a match is found → a random response is selected
+* If no match → chatbot shows a default message
+
+---
+
+## ▶️ How to Run
+
+1. Make sure Python is installed on your system
+2. Download or clone this repository
+3. Navigate to the project folder
+4. Run the file:
+
+```bash
+python Basic_Chat_Box.py
+```
 
 ---
 
 ## 📂 File Structure
-hangman.py   → Main Python file containing all game logic
+
+```
+Chatbox_Project/
+│── Basic_Chat_Box.py
+│── README.md
+```
 
 ---
 
-## ▶️ How to Run the Program
-1. Install Python (if not already installed)
-2. Save the file as:
-   hangman.py
-3. Open terminal or command prompt
-4. Run the program:
-   python hangman.py
+## 💡 Example Interaction
 
----
+```
+Welcome to mini chat box.
 
-## 💾 Data Storage
-- No external files or databases are used.
-- Words are stored in a list inside the program.
-- Game state (guesses, attempts) is stored temporarily in variables.
+1. Ask Question
+2. Exit
 
----
+Enter choice: 1
+Ask question: hi
+Chat box: Hello!
 
-## 🔁 Game Flow
-Start Program  
-↓  
-Select Random Word  
-↓  
-Display Hidden Word  
-↓  
-User Inputs Letter  
-↓  
-Check:
-    → Correct → Reveal Letter  
-    → Wrong → Reduce Attempts  
-↓  
-Repeat Until Win/Loss  
-↓  
-Ask User to Play Again  
+Enter choice: 1
+Ask question: tell me a joke
+Chat box: Why do programmers prefer dark mode? Because light attracts bugs!
+```
 
 ---
 
 ## ⚠️ Limitations
-- Only single lowercase letters are accepted.
-- No tracking of previously guessed letters.
-- Small word list.
-- No graphical interface (CLI only).
+
+* Only responds to exact input (e.g., "hi" works, but "hello there" may not)
+* No AI or learning capability
+* Limited conversation scope
 
 ---
 
 ## 🚀 Future Improvements
-- Add difficulty levels
-- Track guessed letters
-- Expand word list
-- Add hints system
-- Create GUI version (Tkinter or Web)
+
+* Add more flexible input handling (NLP basics)
+* Use loops for better user experience
+* Store chat history
+* Add GUI using Tkinter
 
 ---
 
 ## 👩‍💻 Author
-Alaiza  
-BS Artificial Intelligence Student  
-Focused on improving programming skills and building logic-based projects.
+
+Alaiza Safian
+BS Artificial Intelligence Student
+Learning Python, problem-solving, and building beginner-friendly projects
+
+---
+
+## ⭐ Purpose
+
+This project is part of a beginner portfolio to demonstrate understanding of:
+
+* Python basics
+* Dictionaries
+* Conditional logic
+* User interaction
+
+---
